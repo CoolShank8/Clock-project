@@ -13,7 +13,7 @@ function setup() {
 }
 
 function draw() {
-  background(255,255,255);  
+  background(0,0,0);  
 
   translate(displayWidth/2,350)
 
@@ -24,10 +24,9 @@ function draw() {
   Minute = minute()
   Second = second()
 
-
+  MakeArc(Hour,600,"blue", 12)
   MakeArc(Minute, 500, "white",60)
   MakeArc(Second, 400, "red",60)
-  MakeArc(Hour, 600, "blue",12)
 
   CreateClock(Hour, 600, "blue",12)
   CreateClock(Minute, 500, "white",60)
@@ -54,7 +53,7 @@ function MakeArc(InputOfTime, Scale, Color, DividingNumber)
 
   push()
   stroke(Color)
-  fill("white")
+  fill("black")
   arc(0, 0, Scale, Scale, 0,Angle , QUARTER_PI);
   pop()
 }
