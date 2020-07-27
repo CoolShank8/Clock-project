@@ -3,7 +3,6 @@ var Hour, Minute, Second
 
 function setup() {
   createCanvas(displayWidth,700);
-  createSprite(400, 200, 50, 50);
 
   Hour = hour()
   Minute = minute()
